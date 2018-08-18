@@ -10,4 +10,9 @@ import { LandingPage } from './landing';
     IonicPageModule.forChild(LandingPage),
   ],
 })
-export class LandingPageModule {}
+export class LandingPageModule {
+
+ 
+
+
+}
