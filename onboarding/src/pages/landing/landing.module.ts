@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LandingPage } from './landing';
 
-@NgModule({
-  declarations: [
-    LandingPage,
-  ],
-  imports: [
-    IonicPageModule.forChild(LandingPage),
-  ],
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
 })
-export class LandingPageModule {}
+export class HomePage {
+  galleryType = 'regular';
+  constructor(public navCtrl: NavController) { }
+}
