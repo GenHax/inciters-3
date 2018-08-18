@@ -4,6 +4,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MainPage } from '../pages/main/main';
+import { OdishaPage } from '../pages/odisha/odisha';
+import { IndiaPage } from '../pages/india/india';
+import { LandingPage } from '../pages/landing/landing';
 
 
 import { MyApp } from './app.component';
@@ -13,7 +16,10 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    MainPage
+    MainPage,
+    OdishaPage,
+    IndiaPage,
+    LandingPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,10 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    MainPage
+    MainPage,
+    OdishaPage,
+    IndiaPage,
+    LandingPage
   ],
   providers: [
     StatusBar,
