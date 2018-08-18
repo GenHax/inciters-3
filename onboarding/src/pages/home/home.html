@@ -1,23 +1,34 @@
 <ion-content>
-  <ion-slides pager>
+    <ion-slides pager (ionSlideDidChange)="slideChanged()">
+      
+    <ion-slide>
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon ios="ios-map" md="md-map" color="primary"></ion-icon>
+        </div>
+        <div>
+          <h2>Welcome to India</h2>
+          <p>Welcome to the land of awesomeness. This app will guide you throughout your journey.</p>
+        </div>
+    </ion-slide>
 
     <ion-slide>
         <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
-          <ion-icon ios="ios-analytics" md="md-analytics" color="primary"></ion-icon>
+          <ion-icon ios="ios-navigate" md="md-navigate" color="primary"></ion-icon>
         </div>
         <div>
-          <h2>track your routine</h2>
-          <p>whether it's sets, reps, weight used, you can track it all with our intuitive interface.</p>
+          <h2>Let's Explore</h2>
+          <p>Our app will help you to explore through different states & cities of India easily.</p>
         </div>
     </ion-slide>
 
     <ion-slide>
-      2
-    </ion-slide>
-
-    <ion-slide>
-      3
-    </ion-slide>
-
-  </ion-slides>
-</ion-content>
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon ios="ios-bookmarks" md="md-bookmarks" color="primary"></ion-icon>
+        </div>
+        <div>
+          <h2>Travel Guide</h2>
+          <p>A brief & interactive giudes on the places you visit and its social and cultural heritage.</p>
+        </div>
+      </ion-slide>
+  
+    <button (click)="skip()" id="skip">{{ skipMsg }}</button>
