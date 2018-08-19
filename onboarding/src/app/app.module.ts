@@ -20,6 +20,7 @@ import { HomePage } from '../pages/home/home';
     OdishaPage,
     IndiaPage,
     LandingPage
+    
   ],
   imports: [
     BrowserModule,
