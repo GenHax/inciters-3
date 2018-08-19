@@ -6,7 +6,7 @@ page-landing {
  
     @media (min-width: 0px) {
         .images {
-            column-count: 2;
+            column-count: 3;
         }
     }
  
@@ -24,4 +24,15 @@ page-landing {
  
     .one-image {
         margin: 2px;
-    }}
+        box-shadow: 4px 4px 5px grey;
+
+    }
+
+    .landingbar {
+        color: #488aff;
+    }
+
+    .images {
+        margin-top: 2rem;
+    }
+}
