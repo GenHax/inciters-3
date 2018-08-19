@@ -27,7 +27,7 @@ export class MainPage {
 
   goToIndiaPage(){
     console.log("India Page");
-    this.navCtrl.push(LandingPage);
+    this.navCtrl.setRoot(LandingPage);
   }
 
   alert() {
