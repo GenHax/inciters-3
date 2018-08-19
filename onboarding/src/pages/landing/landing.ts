@@ -20,7 +20,7 @@ export class LandingPage {
   
   gotoPage(image){
     console.log(image);
-    // this.navCtrl.push(OdishaPage);
+    this.navCtrl.push(OdishaPage);
 
   }
   
